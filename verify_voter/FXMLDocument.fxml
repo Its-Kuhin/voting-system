@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: cyan;" styleClass="bodybg" stylesheets="@bgStyle1.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="verify_voter.FXMLDocumentController">
+   <right>
+      <SplitPane dividerPositions="0.30614973262032086" prefHeight="600.0" prefWidth="750.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="290.0" styleClass="bodybg" stylesheets="@bgStyle2.css" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="582.0" styleClass="bodybg" stylesheets="@bgStyle1.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="198.0" layoutY="91.0" prefHeight="30.0" prefWidth="73.0" text="Name">
+                     <font>
+                        <Font name="Arial Black" size="19.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.38825535774230957" green="0.40789473056793213" blue="0.26059940457344055" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.006711409395973154">
+                                 <color>
+                                    <Color red="0.38825535774230957" green="0.40789473056793213" blue="0.26059940457344055" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.16862745583057404" green="0.501960813999176" blue="0.16862745583057404" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Text layoutX="127.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voting System^_^" textAlignment="CENTER" wrappingWidth="303.13671875">
+                     <font>
+                        <Font name="Arial Black" size="31.0" />
+                     </font>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.1739766150712967" green="0.19273878633975983" blue="0.7368420958518982" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.026845637583892617">
+                                 <color>
+                                    <Color red="0.1739766150712967" green="0.19273878633975983" blue="0.7368420958518982" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.20382553339004517" green="0.17909356951713562" blue="0.9210526347160339" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+                  <TextField fx:id="age" layoutX="279.0" layoutY="137.0" promptText="Enter your age" style="-fx-background-color: linear-gradient(to right top, #00daee, #00ded7, #00dfac, #00dc6f, #39d600);; -fx-background-radius: 10;">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="name" layoutX="279.0" layoutY="93.0" promptText="Enter your name" style="-fx-background-color: linear-gradient(to right top, #00daee, #00ded7, #00dfac, #00dc6f, #39d600);; -fx-background-radius: 10;">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <Label alignment="BOTTOM_LEFT" layoutX="202.0" layoutY="135.0" prefHeight="30.0" prefWidth="73.0" text="Age">
+                     <font>
+                        <Font name="Arial Black" size="19.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.38825535774230957" green="0.40789473056793213" blue="0.26059940457344055" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.006711409395973154">
+                                 <color>
+                                    <Color red="0.38825535774230957" green="0.40789473056793213" blue="0.26059940457344055" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.16862745583057404" green="0.501960813999176" blue="0.16862745583057404" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <ChoiceBox fx:id="gender" layoutX="279.0" layoutY="186.0" prefWidth="150.0" style="-fx-background-color: #0a993a;" />
+                  <Label alignment="CENTER" layoutX="198.0" layoutY="183.0" prefHeight="30.0" prefWidth="81.0" text="Gender" textFill="#234389">
+                     <font>
+                        <Font name="Arial Black" size="19.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="division" layoutX="279.0" layoutY="221.0" prefWidth="150.0" style="-fx-background-color: #0a993a;" />
+                  <Label alignment="CENTER" layoutX="198.0" layoutY="219.0" prefHeight="30.0" prefWidth="81.0" text="Division" textFill="#234389">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="result" alignment="CENTER" layoutX="202.0" layoutY="285.0" prefHeight="48.0" prefWidth="265.0" style="-fx-background-color: linear-gradient(to right top, #00ee71, #3edd64, #52cb59, #5cba4f, #62aa48);; -fx-background-radius: 10;" text="Check if you can vote" textFill="#c40808">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Label>
+                  <Button fx:id="btn" alignment="CENTER" layoutX="209.0" layoutY="511.0" mnemonicParsing="false" onAction="#btnAction" prefHeight="44.0" prefWidth="114.0" style="-fx-background-color: linear-gradient(to bottom, #00a4ee, #00befb, #00d4dc, #00e393, #1ceb12);; -fx-background-radius: 1000;" text="Submit" textFill="#0700e5">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <RadioButton layoutX="167.0" layoutY="300.0" mnemonicParsing="false" />
+                  <RadioButton layoutX="167.0" layoutY="225.0" mnemonicParsing="false" />
+                  <RadioButton layoutX="167.0" layoutY="190.0" mnemonicParsing="false" />
+                  <RadioButton layoutX="167.0" layoutY="142.0" mnemonicParsing="false" />
+                  <RadioButton layoutX="167.0" layoutY="98.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="16.0" textFill="#04e050" />
+                  <Text fx:id="icon" fill="#e30b0b" layoutX="166.0" layoutY="548.0" stroke="#0ba8e5" strokeType="OUTSIDE" strokeWidth="0.5" text="👆" textAlignment="CENTER">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#05dbe5" fontSmoothingType="LCD" layoutX="221.0" layoutY="566.0" stroke="#00ffbf" strokeWidth="0.0" text="--------">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#208a26" layoutX="19.0" layoutY="42.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⫴" wrappingWidth="28.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Text>
+                  <Circle fx:id="c2" fill="#62a82c" layoutX="214.0" layoutY="338.0" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="c1" fill="#62a82c" layoutX="453.0" layoutY="280.0" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Circle>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </right>
+</BorderPane>
